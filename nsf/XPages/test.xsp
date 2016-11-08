@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<h3>Server scope tests</h3>
+
+
+	<xp:button
+		value="read"
+		id="button1">
+		<xp:eventHandler
+			event="onclick"
+			submit="true"
+			refreshMode="norefresh">
+			<xp:this.action><![CDATA[#{javascript:eu.linqed.ScopeTest.readScopeVar();}]]></xp:this.action>
+		</xp:eventHandler>
+	</xp:button>
+
+	<xp:button
+		value="update"
+		id="button2">
+		<xp:eventHandler
+			event="onclick"
+			submit="true"
+			refreshMode="norefresh">
+			<xp:this.action><![CDATA[#{javascript:eu.linqed.ScopeTest.updateScopeVar();}]]></xp:this.action>
+		</xp:eventHandler>
+	</xp:button>
+
+	<xp:button
+		value="clear"
+		id="button3">
+		<xp:eventHandler
+			event="onclick"
+			submit="true"
+			refreshMode="norefresh">
+			<xp:this.action><![CDATA[#{javascript:eu.linqed.ScopeTest.clearScopeVar();}]]></xp:this.action>
+		</xp:eventHandler>
+	</xp:button>
+
+
+</xp:view>
